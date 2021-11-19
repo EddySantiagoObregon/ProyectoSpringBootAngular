@@ -1,0 +1,28 @@
+
+<div class="container col-md-6">
+    <div class="card">
+        <div class="car-header"></div>
+        <h3 style="color:#186340; " class="text-center">Editar persona</h3>
+        <div class="card-body">
+          <form>
+              <div class="form-group"> 
+                  <label for="">Nombre:</label>
+                 <input type="text"  [(ngModel)]="persona.nombre" name="nombre"class="form-control">
+              </div>
+              <div class="form-group"> 
+                <label for="">Apellido:</label>
+               <input type="text"  [(ngModel)]="persona.apellido"  name="apellido" class="form-control">
+            </div>
+            <div class="form-group"> 
+                <label for="">Correo:</label>
+               <input [(ngModel)]="persona.email" name="email" type="text" class="form-control">
+            </div>
+            <div class="form-group"> 
+                <label for="">Telefono:</label>
+               <input  [(ngModel)]="persona.telefono" name="telefono" type="number" class="form-control">
+            </div>
+           <!----> <button (click)="Actualizar(persona)"  class="btn btn-success">Guardar</button>
+          </form>
+        </div>
+    </div>
+</div>
